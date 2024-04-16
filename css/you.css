@@ -1,0 +1,42 @@
+form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input {
+  width: 100%;
+  height: 32px;
+  padding-left: 8px;
+}
+.field {
+  margin-bottom: 12px;
+}
+.letter {
+  text-transform: capitalize;
+}
+.red {
+  color: red;
+}
+.green {
+  color: #00ff00;
+}
+.yellow {
+  color: yellow;
+}
+.text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.message {
+  padding: 24px;
+}
+.link {
+  color: aqua;
+}

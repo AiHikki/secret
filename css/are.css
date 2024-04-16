@@ -1,0 +1,10 @@
+.container {
+  padding: 24px;
+  width: 50%;
+}
+.text {
+  margin-bottom: 24px;
+}
+.link {
+  color: aqua;
+}

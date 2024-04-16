@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cicada 3302</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css//you.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form autocomplete="off">
+        <!-- <div class="field">
+          <label for="email">Enter your email, please</label>
+          <input
+            id="email"
+            type="email"
+            placeholder="Email"
+            name="email"
+            required
+          />
+        </div> -->
+
+        <!-- <div class="field"> -->
+        <label for="answer"
+          >to access the videos find a q<span class="letter red">U</span>estion
+          and ente<span class="letter green">R</span> your answer be<span
+            class="letter yellow"
+            >L</span
+          >ow</label
+        >
+        <input
+          id="answer"
+          type="text"
+          placeholder="Your Answer"
+          name="answer"
+          required
+        />
+        <!-- </div> -->
+        <!-- <button type="submit">Check</button> -->
+      </form>
+      <p class="text">
+        Come on, I know you've already have a link to those videos or maybe you
+        don't even need a link, hahahah. I just wanted to play around with you a
+        litte longer. Good luck :)
+      </p>
+    </div>
+    <div class="message"></div>
+    <script>
+      const form = document.querySelector("form");
+      const message = document.querySelector(".message");
+      const container = document.querySelector(".container");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const answer = form.elements.answer.value;
+        container.innerHTML = "";
+        message.innerHTML = `${answer} - that's correct. Hahahaha, actually, I don't know the right answer. I just left it to your imagination. Oh, I forgot about the link. <a class="link" href="https://www.youtube.com/playlist?list=PLOcym2c7xnBwU12Flkm5RcLIEhvURQ8TB">Here it is</a>`;
+        form.reset();
+      });
+    </script>
+  </body>
+</html>
