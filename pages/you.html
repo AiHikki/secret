@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cicada 3302</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="./css//you.css" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css//you.css" />
   </head>
   <body>
     <div class="container">
@@ -55,7 +55,7 @@
         e.preventDefault();
         const answer = form.elements.answer.value;
         container.innerHTML = "";
-        message.innerHTML = `${answer} - that's correct. Hahahaha, actually, I don't know the right answer. I just left it to your imagination. Oh, I forgot about the link. <a class="link" href="https://www.youtube.com/playlist?list=PLOcym2c7xnBwU12Flkm5RcLIEhvURQ8TB">Here it is</a>`;
+        message.innerHTML = `${answer} - that's correct. Hahahaha, actually, I don't know the right answer. I just left it to your imagination. Oh, I forgot about the link. <a class="link" target="_blank" href="https://www.youtube.com/playlist?list=PLOcym2c7xnBwU12Flkm5RcLIEhvURQ8TB">Here it is</a>`;
         form.reset();
       });
     </script>

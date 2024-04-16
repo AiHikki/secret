@@ -116,7 +116,7 @@ canvas.addEventListener("click", (event) => {
     clickY < specialBall.y + specialBall.radius
   ) {
     // Redirect to about.html
-    window.location.href = "who.html";
+    window.location.href = "./pages/who.html";
   }
 });
 
